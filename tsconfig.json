@@ -19,11 +19,16 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseUrl": "./",
+    "rootDir": "src",
     "paths": {
-      // aliases for paths
+      "@components/": ["components/*"],
+      "@ui/": ["components/ui/*"],
     }
   },
   "include": [
-    "src"
+    "src",
+    "**/*.ts",
+    "**/*.tsx"
   ]
 }
